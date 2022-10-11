@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <Image src={gugliCoin} alt="billing" className="w-[100%] h-[100%] relative z-[5] " />
+        <Image src={gugliCoin} alt="billing" className="w-[100%] h-[100%] relative z-[5] " width={400} height={400}/>
       </div>
     </section>
   );

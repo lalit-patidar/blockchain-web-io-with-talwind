@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <Image src={gugliLogo} alt="hoobank" className="w-[124px] h-[32px]" width={80} height={80} />
+      <Image src={gugliLogo} alt="hoobank" className="w-[124px] h-[32px] rounded-[10px]" width={80} height={80} />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (

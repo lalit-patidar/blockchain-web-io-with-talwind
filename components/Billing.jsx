@@ -5,13 +5,12 @@ import Image from 'next/image'
 const Billing = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <Image src={bill} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+      <Image src={""} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
     </div>
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> billing &
-        invoicing
+        We take care of your requirements
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
