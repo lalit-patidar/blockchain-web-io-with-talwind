@@ -19,7 +19,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`bg-primary ${styles.flexStart}`}>
+          <div className={`bg-primary ${styles.flexStart} xl:px-20`}>
             <div className={`${styles.boxWidth}`}>
               <Hero />
             </div>
@@ -27,8 +27,8 @@ export default function Home() {
 
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-              <Stats />
-              <Business />
+            <Testimonials />
+             {/* <Business /> */}
               <Billing />
               <CardDeal />
               <Testimonials />

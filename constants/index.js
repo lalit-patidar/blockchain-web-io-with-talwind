@@ -1,4 +1,7 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../public";
+import nftServiceImg from "../public/nft-vector.png";
+import smartContractImg from "../public/smart-contract.png";
+import uiServiceImg from "../public/ux.png"
 
 export const navLinks = [
   {
@@ -6,16 +9,16 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "services",
+    title: "services",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "about",
+    title: "about",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "connect",
+    title: "connect",
   },
 ];
 
@@ -48,25 +51,28 @@ export const feedback = [
     id: "feedback-1",
     content:
       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
+    name: "Smart Contract Development",
     title: "Founder & Leader",
     img: people01,
+    serviceImage: smartContractImg
   },
   {
     id: "feedback-2",
     content:
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
+    name: "NFTs Development",
     title: "Founder & Leader",
     img: people02,
+    serviceImage: nftServiceImg
   },
   {
     id: "feedback-3",
     content:
       "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
+    name: "Integrate With Website",
     title: "Founder & Leader",
     img: people03,
+    serviceImage: uiServiceImg
   },
 ];
 
