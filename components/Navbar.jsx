@@ -1,8 +1,8 @@
 import { useState } from "react";
 import  Image  from "next/image";
-import { close, menu } from "../public";
+import { close, menu, callImg } from "../public";
 import { navLinks } from "../constants";
-import gugliLogo from "../public/gugli-logo.png";
+import gugliLogo from "../public/trans-gugli.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -10,9 +10,10 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <Image src={gugliLogo} alt="hoobank" className="w-[124px] h-[32px] rounded-[10px]" width={80} height={80} />
+      <Image src={gugliLogo} alt="hoobank" className="w-[124px] h-[32px] rounded-[10px]" width={100} height={100} />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+        <Image src={callImg} alt="call-png" width={50} height={50} className="mr-4"/>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}

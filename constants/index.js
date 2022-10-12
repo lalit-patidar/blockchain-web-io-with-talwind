@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../public";
+import { woman, man, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../public";
 import nftServiceImg from "../public/nft-vector.png";
 import smartContractImg from "../public/smart-contract.png";
 import uiServiceImg from "../public/ux.png"
@@ -46,51 +46,75 @@ export const features = [
   },
 ];
 
+export const services = [
+  {
+    id: "service-1",
+    content:
+    "we build smart contracts in solidity and deploy to main net ethereum blockcahin.",
+    name: "Smart Contract Development",
+    title: "Founder & Leader",
+    serviceImage: smartContractImg
+  },
+  {
+    id: "service-2",
+    content:
+    "we build NFTs in solidity and deploy to main net ethereum blockcahin like erc721, erc1155.",
+    name: "NFTs Development",
+    title: "Founder & Leader",
+    serviceImage: nftServiceImg
+  },
+  {
+    id: "service-3",
+    content:
+    "After successfully testing and deployment of smart contract we can also integrate the smart contract to your website with the help of metamsk wallet",
+    name: "Integrate With Website",
+    title: "Founder & Leader",
+    serviceImage: uiServiceImg
+  },
+];
+
 export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Smart Contract Development",
+      "Gugli is the best option to build smart contarcts and dApps with gas efficent.",
+    name: "Sumeet Dholi",
     title: "Founder & Leader",
-    img: people01,
-    serviceImage: smartContractImg
+    img: man,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "NFTs Development",
-    title: "Founder & Leader",
-    img: people02,
-    serviceImage: nftServiceImg
+      "For my business i need a smart contract to keep business operations transparent and Gugli has created the smart contact successfuly for me.",
+    name: "Pawan Patidar",
+    title: "CEO",
+    img: man,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Integrate With Website",
-    title: "Founder & Leader",
-    img: people03,
-    serviceImage: uiServiceImg
+      "We need to create a payment wallet to make transaction for my particular clients in MLM network and have to integrate with my existing website, for this we choose gugli to make this project and now its working fine in our website.",
+    name: "Preeti Sharma",
+    title: "CTO & Product Manager",
+    img: woman,
   },
 ];
 
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Projects Deliverd",
+    value: "40+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Trusted by Clients",
+    value: "35+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Dedicated Developers",
+    value: "110+",
   },
 ];
 
