@@ -26,6 +26,12 @@ import people03 from "./people03.png";
 import man from "./man.png";
 import woman from "./woman.png";
 import callImg from "./call.png";
+import skype from "./skype.png";
+import linkedIn from "./linkedin.png";
+import slack from "./slack.png";
+import whatsapp from "./whatsapp.png";
+import form from "./form.png";
+import telephone from "./tel-call.png";
 
 
 export {
@@ -56,5 +62,11 @@ export {
   people03,
   man,
   woman,
-  callImg
+  callImg,
+  skype,
+  linkedIn,
+  slack,
+  whatsapp,
+  form,
+  telephone
 };

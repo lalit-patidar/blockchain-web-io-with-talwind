@@ -1,4 +1,4 @@
-import { woman, man, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../public";
+import { woman, man, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, slack, linkedIn, skype, whatsapp, telephone  } from "../public";
 import nftServiceImg from "../public/nft-vector.png";
 import smartContractImg from "../public/smart-contract.png";
 import uiServiceImg from "../public/ux.png"
@@ -20,6 +20,44 @@ export const navLinks = [
     id: "connect",
     title: "connect",
   },
+];
+
+
+
+export const callOptions = [
+  {
+    id: "skype",
+    title: "Skype",
+    img: skype,
+    src: "skype:live:.cid.a3e3f2a675ff5fdb?call"
+  },
+  {
+    id: "phone",
+    title: "phone",
+    img: telephone,
+    src: "tel:+919977138257"
+  },
+]
+
+
+export const connectOptions = [
+  {
+    id: "skype",
+    title: "Skype",
+    img: skype,
+    src: "skype:live:.cid.a3e3f2a675ff5fdb?chat"
+  },
+  {
+    id: "whatsapp",
+    title: "Whatsapp",
+    img: whatsapp,
+    src: "https://wa.me/+919977138257?text=hello"
+  },
+  {
+    id: "slack",
+    title: "slack",
+    img: slack
+  }
 ];
 
 export const features = [
@@ -52,7 +90,6 @@ export const services = [
     content:
     "we build smart contracts in solidity and deploy to main net ethereum blockcahin.",
     name: "Smart Contract Development",
-    title: "Founder & Leader",
     serviceImage: smartContractImg
   },
   {
@@ -60,15 +97,13 @@ export const services = [
     content:
     "we build NFTs in solidity and deploy to main net ethereum blockcahin like erc721, erc1155.",
     name: "NFTs Development",
-    title: "Founder & Leader",
     serviceImage: nftServiceImg
   },
   {
     id: "service-3",
     content:
-    "After successfully testing and deployment of smart contract we can also integrate the smart contract to your website with the help of metamsk wallet",
+    "After successfully testing and deployment of smart contract, We integrate the smart contract to your website and make responsive for users",
     name: "Integrate With Website",
-    title: "Founder & Leader",
     serviceImage: uiServiceImg
   },
 ];
