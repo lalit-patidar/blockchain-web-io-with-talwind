@@ -13,6 +13,7 @@ const style = {
   height: 300,
   // bgcolor: 'background.paper',
   boxShadow: 24,
+  border: "2px solid white",
   p: 4,
   borderRadius: 5,
 };
@@ -30,8 +31,8 @@ export default function ConnectModal({showPopup, handlePopup, options, title, po
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} className="bg-white dark:bg-slate">
-          <h3 className='font-poppins font-semiBold capitalize text-gradient-to-r from-cyan-500 to-blue-500'>
+        <Box sx={style} className="feedback-card">
+          <h3 className='font-poppins font-bold capitalize text-white text-[20px]'>
             {title}
           </h3>
           <Box sx={{marginTop: 5}}>

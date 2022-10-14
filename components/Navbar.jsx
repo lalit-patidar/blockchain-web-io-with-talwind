@@ -7,7 +7,6 @@ import gugliLogo from "../public/trans-gugli.png";
 const Navbar = ({handlePopup}) => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-  const [showp, setShowp] = useState(true)
 
 
 console.log("stat", active)
@@ -17,27 +16,30 @@ console.log("stat", active)
      
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
        <div className="w-16 flex items-center cursor-pointer">
-      
        <Image src={callImg} alt="call-png" width={50} height={50} onClick={() => handlePopup("call", true)}/>
-       
        </div>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal cursor-pointer text-[16px] capitalize ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => {
               setActive(nav.title);
-              handlePopup("connect", true)
+              if(nav.id === "connect") {
+                handlePopup("connect", true)
+              }
             }}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`${nav.id === "home" ? "/" : `#${nav.id}`}`}>{nav.title}</a>
           </li>
         ))}
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="w-16 flex items-center cursor-pointer mr-2">
+       <Image src={callImg} alt="call-png" width={40} height={40} onClick={() => handlePopup("call", true)}/>
+       </div>
         <Image
           src={toggle ? close : menu}
           alt="menu"
@@ -54,12 +56,15 @@ console.log("stat", active)
             {navLinks.map((nav, index) => (
               <li
               key={nav.id}
-              className={`font-poppins font-medium cursor-pointer text-[16px] ${
+              className={`font-poppins font-medium cursor-pointer text-[16px] capitalize ${
                 active === nav.title ? "text-white" : "text-dimWhite"
               } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
               onClick={() => {
                 setActive(nav.title);
-                handlePopup("connect", true)
+                if(nav.id === "connect") {
+                  handlePopup("connect", true)
+                }
+               
               }}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
